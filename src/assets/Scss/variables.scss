@@ -1,0 +1,25 @@
+// variables.scss
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+// Colors
+$primary-color: #ce9797;
+$secondary-color: #413a3a;
+$accent-color: #f96262;
+
+// background
+$linear-gradient-1: linear-gradient(135deg, #ffffff, #fff5f5);
+$linear-gradient-2: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+$bg-pattern: url('../images/bg-pattern-desktop.svg');
+
+// Font sizes
+$small-font-size: 14px;
+$base-font-size: 16px;
+$large-font-size: 20px;
+
+// Font family
+$primary-font-family: 'Josefin Sans', sans-serif;
+
+// Breakpoints
+$mobile-breakpoint: 480px;
+$mobile-width: 768px;
+$tablet-width: 1024px;
+$desktop-width: 1280px;
