@@ -1,0 +1,37 @@
+.inputDiv {
+  position: relative;
+  width: 100%;
+  input {
+    width: 100%;
+    padding: 20px;
+    font-size: $large-font-size;
+    padding-left: 30px;
+    border-radius: 100px;
+    color: $primary-color;
+
+    outline: 0;
+    border: 1px solid $primary-color;
+    &::placeholder {
+      color: $primary-color;
+    }
+    &.error {
+      border: 1px solid $accent-color;
+      color: $accent-color;
+      &::placeholder {
+        color: $accent-color;
+      }
+    }
+  }
+  > img {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    color: $accent-color;
+    font-size: $small-font-size;
+    padding-left: 30px;
+    position: absolute;
+  }
+}

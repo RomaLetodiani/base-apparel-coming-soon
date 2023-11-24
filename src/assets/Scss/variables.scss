@@ -8,7 +8,7 @@ $accent-color: #f96262;
 // background
 $linear-gradient-1: linear-gradient(135deg, #ffffff, #fff5f5);
 $linear-gradient-2: linear-gradient(135deg, #f8bfbf, #ee8c8c);
-$bg-pattern: url('../images/bg-pattern-desktop.svg');
+$linear-gradient-3: linear-gradient(135deg, #f7dcdc, #f5d6d6);
 
 // Font sizes
 $small-font-size: 14px;
@@ -23,3 +23,10 @@ $mobile-breakpoint: 480px;
 $mobile-width: 768px;
 $tablet-width: 1024px;
 $desktop-width: 1280px;
+
+// Responsive mixins
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}

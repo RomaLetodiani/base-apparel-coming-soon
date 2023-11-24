@@ -1,6 +1,13 @@
+import { useInput } from '../../hooks/useInput';
 import Input from '../UI/input/Input';
 import './main.scss';
 const Main = () => {
+  const {
+    value: email,
+    hasError: emailError,
+    valueChangeHandler: emailChangeHandler,
+    valueBlurHandler: emailBlurHandler,
+  } = useInput({ validate: (value) => value.includes('@') });
   return (
     <main>
       <h1>
@@ -13,7 +20,10 @@ const Main = () => {
       </p>
       <Input
         errorMessage="Please provide a valid email"
-        error={false}
+        error={emailError}
+        value={email}
+        valueChangeHandler={emailChangeHandler}
+        valueBlurHandler={emailBlurHandler}
         placeholder="Email address"
       />
     </main>

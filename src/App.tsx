@@ -1,15 +1,17 @@
-import hero from './assets/images/hero-desktop.jpg';
 import MobileHero from './components/MobileHero';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
+import useMediaQuery from './hooks/useMediaQuery';
 const App = () => (
   <div className="content">
     <div className="container">
-      <Header />
-      <MobileHero />
-      <Main />
+      <div className="wrapper">
+        <Header />
+        {useMediaQuery('(max-width: 769px)') && <MobileHero />}
+        <Main />
+      </div>
     </div>
-    <img src={hero} alt="hero" />
+    {useMediaQuery('(min-width: 769px)') && <div className="img-div" />}
   </div>
 );
 

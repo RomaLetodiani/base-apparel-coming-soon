@@ -1,0 +1,33 @@
+main {
+  padding: 30px;
+  flex: 1;
+  @include mobile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: clamp(35px, 8vw, 70px);
+    line-height: 1.2;
+    letter-spacing: 20px;
+    @include mobile {
+      letter-spacing: 10px;
+    }
+    span {
+      color: $primary-color;
+      font-weight: 300;
+    }
+  }
+  p {
+    margin: 20px 0;
+    color: $primary-color;
+    line-height: 1.5;
+    max-width: 450px;
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}

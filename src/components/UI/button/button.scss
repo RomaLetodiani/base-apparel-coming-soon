@@ -1,0 +1,17 @@
+.submitButton {
+  background: $linear-gradient-2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 10px 30px -10px #8000009e;
+  cursor: pointer;
+  &:hover {
+    background: $linear-gradient-3;
+    box-shadow: 0px 10px 20px -5px #8000009e;
+  }
+}
